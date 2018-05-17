@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
-
 int main()
 {
 	int vetor[1000], i, num, a = 0;
@@ -18,13 +14,13 @@ int main()
 	{
 		if(*(p+i) == num)
 		{
-			a++
+			a++;
 			printf("\n0x%p", &vetor[i]);
 		}
 	}
 	if(i != sizeof(vetor))
 		i++;
 	r = (unsigned char*)&vetor[i];
-	printf("\nEsses %d bytes estao localizados entre o endereco %p ate o endereco %p na memoria.", a, num, &q, &r);
+	printf("\n\nEsses %d bytes estao localizados entre o endereco %p ate o endereco %p na memoria.", a, num, &q, &r);
 	return 0;
 }

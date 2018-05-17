@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
 int main()
 {
 	int vetor[1000], i, num, a = 0;

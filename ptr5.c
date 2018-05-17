@@ -18,12 +18,13 @@ int main()
 	{
 		if(*(p+i) == num)
 		{
+			a++
 			printf("\n0x%p", &vetor[i]);
 		}
 	}
 	if(i != sizeof(vetor))
 		i++;
 	r = (unsigned char*)&vetor[i];
-	printf("\nEsses bytes estao localizados entre %p ate %p na memoria.", num, &q, &r);
+	printf("\nEsses %d bytes estao localizados entre o endereco %p ate o endereco %p na memoria.", a, num, &q, &r);
 	return 0;
 }
